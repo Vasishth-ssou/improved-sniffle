@@ -376,3 +376,19 @@ if answ == 'y':
     print(help(os.path))
 elif answ == 'n':
     pass
+# show basename of path
+print(os.path.basename('C:/temp/css.exe'))
+# directory name of path
+print(os.path.dirname('C:/temp/css.exe'))
+# both directory and basename
+print(os.path.split('C:/temp/css.exe'))
+# check if path exist or not
+print(os.path.exists('C:/temp/css.exe'))
+# check if the basefile is directory or not
+print(os.path.isdir('C:/temp/css.exe'))
+# check if the basefile is file or not
+print(os.path.isfile('C:/temp/css.exe'))
+# split file path and extension
+print(os.path.splitext('C:/temp/css.exe'))
+# split drive
+print(os.path.splitdrive('C:/temp/css.exe'))
