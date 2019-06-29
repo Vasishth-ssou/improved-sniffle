@@ -308,6 +308,8 @@ my_date=datetime.date(2019, 5, 27)
 print(employee.is_weekday(my_date))
 '''
 
+
+# '''
 ###OS Module - Use Underlying OS Functions
 
 import os 
@@ -361,3 +363,16 @@ for dirpath, dirname, filename in os.walk('C:/Users/cstt/Desktop/python'):
     print('Directories:',dirname)
     print('File Name:',filename)
 
+##WARNING## Code is not working or not understood yet
+# print(os.environ.get('HOME'))
+
+# join file to pariticular path
+file_path = os.path.join(os.getcwd(), 'test1.txt')
+print(file_path)
+
+# print()
+answ=input('More Info on os.path? \ny/n')
+if answ == 'y':
+    print(help(os.path))
+elif answ == 'n':
+    pass
